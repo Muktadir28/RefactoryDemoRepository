@@ -1,7 +1,10 @@
-package RefactoryDemoPacage;
+package RefactoryDemoPackage;
 
-public class RefactoryDemo {
+import RefactoryDemoPacage.Enumeration;
+import RefactoryDemoPacage.MyCollection;
+import RefactoryDemoPacage.Order;
 
+public class RefactoryDemo2 {
 	private MyCollection _orders = new MyCollection();
 	private String _name = "Customer Name";
 	void printOwing(){
@@ -19,13 +22,17 @@ public class RefactoryDemo {
 		}
 		
 		// print details
-		System.out.println("name: " + _name);
-		Syatem.out.println("amount: " + outstanding);
-		System.out.println("Count: " + count)
+		printDetails(outstanding, count);
 	}
 	private void printBanner() {
 		System.out.println("*************************");
 		System.out.println("***** Customer Owes *****");
 		System.out.println("*************************");
 	}
+	private void printDetails(double outstanding, int count) {
+		System.out.println("name: " + _name);
+		Syatem.out.println("amount: " + outstanding);
+		System.out.println("Count: " + count)
+	}
+
 }
